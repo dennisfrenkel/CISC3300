@@ -1,0 +1,26 @@
+﻿Dennis Frenkel
+Homework 1
+Information & Web Programming
+
+
+1. What is HTML? What does it do?
+HTML (HyperText Markup Language) is the standard language for creating web pages. It provides the structure for a webpage by using elements and tags to define different types of content, like headings, paragraphs, images, and links. Essentially, HTML organizes the content of a webpage and defines how it is displayed in the browser.
+2. What is CSS? What does it do?
+CSS (Cascading Style Sheets) is a language used to style and visually format the structure of a webpage created with HTML. It controls the layout, colors, fonts, and overall design of the web content, ensuring that the webpage looks appealing and responsive across different devices.
+3. Access Fordham University. In your own words, describe how this webpage uses structure to convey meaning and navigation options to the user.
+The Fordham University webpage uses a clear hierarchical structure, starting with a top navigation bar that includes essential links such as "Academics," "Admission," and "Research." Beneath this, a large hero banner emphasizes important news or events, grabbing immediate attention. The layout utilizes sections with headings and subheadings to guide the user, with call-to-action buttons and menus offering quick navigation to further details. The footer includes important secondary links like "Contact Us" and social media links, making navigation intuitive.
+4. What is an HTML element? Tag? Attribute?
+An HTML element consists of a start tag, content, and an end tag. For example, <p>This is a paragraph.</p>, where <p> is the start tag, "This is a paragraph." is the content, and </p> is the end tag.
+5. What are the parts of a CSS rule?
+A CSS rule consists of: Selector: Specifies the HTML elements to be styled (e.g., p to style all paragraph elements). Declaration Block: Contains the styles to be applied to the elements, enclosed in curly braces {}. Declarations: Each declaration consists of a property (what you want to change, e.g., color) and a value (how you want to change it, e.g., red), separated by a colon (:).
+6. Explain how CSS rules cascade.
+CSS rules cascade based on specificity, importance, and order of appearance. When multiple styles apply to the same element, the browser prioritizes styles based on:
+Specificity: More specific selectors (e.g., IDs are more specific than classes, which are more specific than element tags) will override less specific ones.
+Importance: Styles with the !important flag will override other declarations regardless of specificity.
+Order of appearance: If two rules have the same specificity, the one written later in the CSS file will override the earlier one.
+7. If you have a directory called project-1 that contains two subdirectories, html-files and images. In the html-files directory, you have an HTML file called html-1.html that has an img element with a src attribute, write out the value of the src attribute to access an image file called pinecone.jpg in the images directory.
+The value of the src attribute would be:
+<img src="../images/pinecone.jpg" alt="Pinecone">
+The ../ moves one directory up from the html-files directory to access the images directory.
+8. What is the default behavior when submitting an HTML form?
+The default behavior of submitting an HTML form is to send the form data to the URL specified in the action attribute using the method defined in the method attribute (usually GET or POST). If no method is specified, it defaults to GET, and if no action is provided, the form submits to the same URL as the current page. The page will refresh due to the submission unless JavaScript is used to prevent this.
