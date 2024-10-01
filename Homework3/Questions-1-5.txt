@@ -1,0 +1,25 @@
+1. What is javascript? How does an interpreted programming language differ from a
+compiled language?
+- JavScript is a programming language which is usually used for front end by web developers to add a sort-of 
+dynamic/interactive interactions on web pages, games, etc. Interpreted languages are executed line by line at 
+run-time, whereas compiled languages are converted into machine code beforehand, but requiere recompilation for 
+code changes.
+2. Contrast dynamically typed programming languages with statically typed ones. And
+contrast strongly typed programming languages with weakly typed ones. (google these)
+- Dynamically typed languages determine data types at runtime, allowing variables to change 
+types during execution. This flexibility comes at the cost of potential runtime errors if data 
+types are not handled correctly. Statically typed languages determine data types at compile time,
+ensuring type safety but often requiring more verbose code.
+3. What is the difference between var, let, and const when declaring variables in JS?
+- var is function-scoped or globally scoped and can be reassigned or redeclared. let is block-scoped and can 
+be reassigned but not redeclared, providing better control over variable lifetimes. const is block-scoped and 
+cannot be reassigned or redeclared, making it suitable for constants.
+4. What are anonymous functions? Higher order functions? Callback functions? First class
+functions?
+- Anonymous functions are functions without names, usually used as arguments to other functions or assigned to variables.
+Higher order functions take functions as arguments or return functions as results. Callback functions are functions passed as arguments 
+to other functions to be executed at a later time. First-class functions are functions that can be treated like any other value in the language.
+5. Define objects in JavaScript.
+-In JavaScript, an object is a collection of key-value pairs, where each key is a string (or symbol) and the value 
+can be of any data type. Objects are used to store structured data and encapsulate related properties and behaviors. 
+
