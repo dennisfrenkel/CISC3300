@@ -9,7 +9,7 @@ contrast strongly typed programming languages with weakly typed ones. (google th
 - Dynamically typed languages determine data types at runtime, allowing variables to change 
 types during execution. This flexibility comes at the cost of potential runtime errors if data 
 types are not handled correctly. Statically typed languages determine data types at compile time,
-ensuring type safety but often requiring more verbose code. Strong versus weak typing: strongly typed languages enforce strict type rules, meaning variables cannot be implicitly converted between types without explicit casting. This reduces errors but can add complexity. On the other hand, weakly typed languages allow more implicit conversions between data types, leading to more flexible but potentially error-prone code.
+ensuring type safety but often requiring more verbose code. Strong versus weak typing: strongly typed languages enforce strict type rules, meaning variables cannot be implicitly converted between types without explicit casting. This might reduce errors but can add complexity. On the other hand, weakly typed languages allow more implicit conversions between data types, leading to more flexible but potentially error-prone code.
 3. What is the difference between var, let, and const when declaring variables in JS?
 - var is function-scoped or globally scoped and can be reassigned or redeclared. let is block-scoped and can 
 be reassigned but not redeclared, providing better control over variable lifetimes. const is block-scoped and 
