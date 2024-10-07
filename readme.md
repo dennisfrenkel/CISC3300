@@ -1,1 +1,1 @@
-this is my github repository for cisc3300
+This is my github repository for CISC3300
