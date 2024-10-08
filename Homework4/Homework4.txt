@@ -1,0 +1,40 @@
+1. What is the DOM? What is meant by the DOM tree?
+The Document Object Model (DOM) is a programming interface that represents the structure of an HTML or XML document. 
+It defines how the browser interprets the structure of the page, allowing JavaScript to access and modify content dynamically.
+The DOM is essentially the browser's live, real-time rendering of the HTML page, meaning that any changes made to the DOM are
+immediately reflected in the browser window. The DOM tree refers to how the page's content is structured into a hierarchical
+model, where each node represents an element, attribute, or piece of text from the document. There are four main types of nodes 
+in the DOM tree: the document node (representing the whole page), element nodes (for individual HTML elements), attribute nodes 
+(for element attributes), and text nodes (for the text contained within elements). The tree-like structure allows for the easy 
+traversal and manipulation of these elements, making dynamic updates to the web page possible.
+
+2. What is an XSS attack? How do they work? How can you guard against them?
+Cross-Site Scripting (XSS) attacks occur when malicious scripts are injected into trusted websites, typically through user input
+that is not properly sanitized. If an attacker can input JavaScript or other executable code into a website’s form field or URL, 
+and that input is displayed on the site without being properly escaped or validated, the attacker’s code may execute in the browsers
+of other users visiting the page. This can lead to serious security breaches, such as stealing cookies, session tokens, or login 
+credentials. To guard against XSS attacks, developers should validate and sanitize user input, ensuring it is treated as plain text 
+rather than executable code. Escaping or removing potentially dangerous characters, like angle brackets (`< >`), can prevent the injection
+of malicious HTML or JavaScript. Other measures include content security policies (CSPs) and libraries that automatically sanitize inputs.
+
+3. What is an event in JavaScript?
+An event in JavaScript refers to actions or occurrences that happen in the browser, which JavaScript can detect and respond to. 
+These events are often triggered by user interactions with a webpage, such as clicking a button, typing on a keyboard, or moving the mouse. 
+Additionally, other events may occur as the browser loads or unloads resources, such as a page finishing loading or an image failing to load. 
+When an event occurs, JavaScript can execute code in response, enabling dynamic interactivity on web pages.
+
+4. How does a DOM event listener work? What are the parameters it is expecting?
+A DOM event listener is a function that listens for a specific event on a particular element and executes a given callback function when that event occurs.
+It is added to a target element using the `addEventListener()` method. The method takes at least two parameters: the type of event to listen for 
+(e.g., 'click', 'keydown', 'mouseover') and the function to execute when that event occurs. An optional third parameter can specify whether the event should 
+be captured in the capturing phase or bubble up (the default) during the event propagation process. This approach is preferred over using inline event handlers 
+as it allows multiple event listeners to be added to the same element, improves code organization, and offers better flexibility for event handling.
+
+5. What is jQuery? Why use it? How do we load jQuery onto a page?
+jQuery is a lightweight JavaScript library designed to simplify the manipulation of HTML documents, event handling, animations, and AJAX interactions
+in a way that is easier and faster to write compared to plain JavaScript. One of its primary benefits is the ability to accomplish complex tasks, 
+like DOM traversal or AJAX requests, with less code. Additionally, jQuery helps in managing cross-browser compatibility issues, which was especially 
+valuable when it was first developed. jQuery can be loaded onto a webpage by including it via a Content Delivery Network (CDN) or by downloading the 
+library and hosting it locally. To use a CDN, developers can add a script tag to their HTML, linking to the jQuery file hosted online, such as:  
+html<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>. This will make jQuery available for use throughout the page.
+
