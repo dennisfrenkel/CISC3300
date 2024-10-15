@@ -1,0 +1,19 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Chicken Fajitas",
+      "description": "Sizzling chicken and bell peppers cooked with onions and garlic."
+    },
+    {
+      "id": "2",
+      "title": "Beef Tacos",
+      "description": "Seasoned ground beef, lettuce, tomatoes, and cheese wrapped in a crispy taco shell."
+    },
+    {
+      "id": "3",
+      "title": "Vegetable Stir-Fry",
+      "description": "Stir-fried vegetables, including broccoli, carrots, and bell peppers, served over rice."
+    }
+  ]
+}
