@@ -98,11 +98,9 @@
         contentType: 'application/json',
         data: JSON.stringify(newRecipe),
         success: function() {
-          // Clear form fields
           $('#title').val('');
           $('#description').val('');
 
-          // Reload the recipe list
           $.get('http://localhost:3000/recipes', function(data) {
             displayRecipes(data);
           });
