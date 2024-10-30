@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Users List</title>
+    <title>Users</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        .user { margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
-        .user-name { font-weight: bold; }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>User List</h1>
-    <div id="user-list"></div>
+    <h1>Users</h1>
+    <ul id="users-list"></ul>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            fetch('/users')
-                .then(response => response.json())
-                .then(data => {
-                    const userList = document.getElementById('user-list');
-                    data.forEach(user => {
-                        const userDiv = document.createElement('div');
-                        userDiv.classList.add('user');
-                        userDiv.innerHTML = `<div class="user-name">${user.name}</div><div>${user.email}</div>`;
-                        userList.appendChild(userDiv);
-                    });
-                })
-                .catch(error => console.error('Error', error));
-        });
+        fetch('/users')
+            .then(response => response.json())
+            .then(data => {
+                const userListElement = document.getElementById('users-list');
+                data.forEach(user => {
+                    const userElement = document.createElement('li');
+                    userElement.innerHTML = `${user.name} (${user.email})`;
+                    userListElement.appendChild(userElement);
+                });
+            });
     </script>
 </body>
 </html>
