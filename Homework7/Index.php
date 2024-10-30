@@ -1,12 +1,14 @@
 <?php
+
 require_once 'Controllers/UserController.php';
-require_once 'Models/UserModel.php';
 
-$controller = new UserController();
+$userController = new UserController();
 
-if ($_SERVER['REQUEST_URI'] === '/Index.php/users' || $_SERVER['REQUEST_URI'] === '/users') {
-    $controller->getJsonData();
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && $_SERVER['REQUEST_URI'] === '/users') {
+    $userController->getUsersJson();
+} elseif ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    $userController->getUsersHtml();
 } else {
-    $controller->getHtmlPage();
+    http_response_code(405);
+    echo json_encode(['error' => 'Method Not Allowed']);
 }
-?>
