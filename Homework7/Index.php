@@ -1,14 +1,12 @@
 <?php
-require_once 'controllers/UserController.php';
-require_once 'models/UserModel.php';
+require_once 'Controllers/UserController.php';
+require_once 'Models/UserModel.php';
 
-$userController = new UserController();
+$controller = new UserController();
 
-$uri = $_SERVER['REQUEST_URI'];
-
-if ($uri === '/users' && $_SERVER['REQUEST_METHOD'] === 'GET') {
-    $userController->getJsonData();
+if ($_SERVER['REQUEST_URI'] === '/Index.php/users' || $_SERVER['REQUEST_URI'] === '/users') {
+    $controller->getJsonData();
 } else {
-    $userController->getHtmlPage();
+    $controller->getHtmlPage();
 }
 ?>
