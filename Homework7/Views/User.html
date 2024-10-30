@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users List</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .user { margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        .user-name { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>User List</h1>
+    <div id="user-list"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('/users')
+                .then(response => response.json())
+                .then(data => {
+                    const userList = document.getElementById('user-list');
+                    data.forEach(user => {
+                        const userDiv = document.createElement('div');
+                        userDiv.classList.add('user');
+                        userDiv.innerHTML = `<div class="user-name">${user.name}</div><div>${user.email}</div>`;
+                        userList.appendChild(userDiv);
+                    });
+                })
+                .catch(error => console.error('Error', error));
+        });
+    </script>
+</body>
+</html>
