@@ -1,0 +1,23 @@
+
+1.  What is a class? What is an object? What is OOP? 
+A  class is a blueprint or template for creating objects in OOP (Object Oriented Programming). It defines properties (data) and methods (functions) that describe the behavior and characteristics of the objects created from it.
+ An object is an instance of a class, with actual values assigned to its properties, acting as a concrete representation of the class.
+OOP  is a programming paradigm that organizes software design around objects and classes, emphasizing concepts like encapsulation, inheritance, polymorphism, and abstraction.
+2.  Why use an abstract class in OOP? 
+An abstract class provides a base template for other courses but cannot itself be instantiated. It’s beneficial when you have a high-level functionality that should be shared but want specific implementation details to be handled in derived classes. It helps with code organization and ensures that subclasses adhere to a certain structure while allowing flexibility for unique implementations.
+3.  What are superglobals in PHP, and what are some examples of data they provide?
+Superglobals are special predefined PHP variables that are always accessible from any scope within a script. Examples:
+$_SERVER: Provides server and request information like - `REQUEST_METHOD`, REQUEST_URI, and host info.
+$_POST` and $_GET`: Hold data sent via HTTP POST or GET requests.
+$_SESSION`: Stores session data, allowing information persistence across pages.
+$_COOKIE`: Accesses cookie data.
+  
+4.  What are the two steps to setting up and using a class via namespaces? 
+Step 1: Define the namespace within the class file (e.g., `namespace app\models;`).
+Step 2: In the script where you want to use the class, either type out the full namespace path (`new app\models\Post();`) or import it using `use app\models\Post;` for simpler calls.
+5.  What is MVC? Detail the different parts. 
+MVC  (Model View Controller) is a design pattern that separates an application into three main components:
+Model: Manages the data and business logic of the application, often interacting directly with the database.
+View: Responsible for presenting data to the user, mainly through HTML, CSS, and JavaScript.
+Controller: Acts as an intermediary between the model and view, processing user input, updating the model, and refreshing the view accordingly.
+

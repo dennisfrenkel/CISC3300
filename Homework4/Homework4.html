@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive List and Form</title>
+    <style>
+        .error {
+            background-color: rgb(160, 67, 67);
+            color: white;
+            padding: 5px;
+        }
+
+        .success {
+            background-color: rgb(65, 147, 65);
+            color: white;
+            padding: 5px;
+        }
+    </style>
+    <script src="Homework4.js"></script>
+</head>
+<body>
+    <h1>Interactive List and Form</h1>
+    
+    <ul id="color-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <h2>Cats List</h2>
+    <ul id="cats-list"></ul>
+
+    <h2>Submit a Form</h2>
+    <form id="cat-form">
+        <label for="cat-input">Enter text: </label>
+        <input type="text" id="cat-input" name="cat-input">
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="form-message"></div>
+</body>
+</html>

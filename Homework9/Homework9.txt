@@ -1,0 +1,36 @@
+﻿Dennis Frenkel
+Homework 9
+
+
+ 1. What is SQL? MySQL? What are relational databases?
+
+
+* SQL (Structured Query Language) is a standard language for creating, reading, updating, and deleting data in databases. It allows us to interact with databases to manage and retrieve data.
+*  MySQL is a popular relational database management system that uses SQL to manage data within a database. MySQL allows us to create and manipulate databases and tables through SQL commands.
+* Relational Databases are a type of database where data is stored in tables with predefined structures. The tables are related to each other through key fields, allowing for the organization and retrieval of data across related tables.
+
+
+ 2. What is normalization in SQL?
+
+
+* Normalization is the process of organizing a database to reduce data redundancy and ensure data integrity. By creating relationships between tables, normalization helps structure the data efficiently. In a normalized database, columns, and tables are organized to enforce dependencies so that data scales well and can be managed effectively without unnecessary duplication.
+
+
+ 3. What are primary and foreign keys?
+
+
+* A Primary Key is a unique identifier for each record in a table. It must be unique and cannot contain null values. Each table can have only one primary key.
+* A Foreign Key is a field in one table that links to the primary key of another table, establishing a relationship between the two tables. This connection ensures that records in one table are associated with relevant records in another table.
+
+
+ 4. What are the three relationship types?
+
+
+1. One-to-One: Each record in one table corresponds to one and only one record in another table.
+2. One-to-Many: A record in one table can be associated with multiple records in another table.
+3. Many-to-Many: Each record in one table can relate to multiple records in another table and vice versa. This relationship is typically managed through a third table (join table) that holds references to both primary tables.
+
+
+5. What is the difference between a left and inner join?
+* A Left Join returns all records from the left (first) table and the matching records from the right (second) table. If there are no matches, the result will still include all records from the left table with ‘NULL’ values for the right table's columns.
+*  An Inner Join returns only the records that have matching values in both tables. The record will not appear in the result set if there is no match.

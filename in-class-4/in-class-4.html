@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In Class 4</title>
+</head>
+<body>
+    <h1>In Class 4</h1>
+    <script src="in-class-4.js"></script>
+
+    <script>
+        const firstObject = {
+            name: "Dennis",
+            echo: function() {
+                console.log(this.name);
+            }
+        };
+
+        firstObject.echo();
+        firstObject.name = "Frenkel";
+        firstObject.echo();
+    </script>
+</body>
+</html>

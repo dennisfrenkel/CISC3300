@@ -1,0 +1,23 @@
+
+
+1.www.example.com?name=Dennis&age=20
+2."Escaping a character" uses a special symbol, like a backslash (`\`), to treat the following character as literal rather than code syntax. For example, in single-quoted strings in PHP, most characters appear as-is, but you can use `\'` for a literal single quote and `\\` for a literal backslash. More escape sequences are recognized in double-quoted strings, and variables can be embedded directly. Curly braces `{}` help isolate variables within strings to avoid confusion, similar to template literals in JavaScript, where variables can be directly included, like `"Welcome $name!"`.
+3.HTTP Status Codes:
+a. 200 OK: Request successful.
+b. 400 Bad Request: Invalid request syntax.
+c. 401 Unauthorized: Authentication required.
+d. 403 Forbidden: Access denied.
+e. 404 Not Found: Resource not found.
+f. 500 Internal Server Error: Server-side error.
+4.Validating data is crucial to ensure application integrity, security, and reliability. If data from the frontend isn't checked and verified, it can lead to errors, bugs, security threats, data corruption, and poor user experience. 
+5.Sessions and cookies are used to store user information across web pages. A session is a storage mechanism on the server that retains user-specific data while they interact with the website. It is typically deleted when the user logs out or closes the browser. Conversely, a cookie is a small file stored on the user's browser, allowing data to persist across sessions and track preferences or login states. Cookies can be set to expire after a specified period, making them useful for maintaining a user's identity over multiple visits.
+6.try {
+   // Expectation: expect a valid email address for $email
+   $email = "invalid_email";  // Example input that doesn't meet the expectation
+   if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+               throw new Exception("Invalid email address.");
+    }
+} catch (Exception $e) {
+    echo "Exception: ($email) is not a valid email address.";
+}
+
